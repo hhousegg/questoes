@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+    int a, b, c;
+    double r, s, ab, bc;
+
+     printf ("digite o valor de entrada (a): ");
+    scanf ("%d", &a);
+
+    printf ("digite o valor de entrada (b): ");
+    scanf ("%d", &b);
+
+    printf ("digite o valor de entrada (c): ");
+    scanf ("%d", &c);
+
+    ab = (a + b);
+    bc = (b + c);
+    r = pow(ab, 2);
+    s = pow(bc, 2);
+
+    printf ("o resultado da expressao e: %.1lf", (r+s) / 2);
+
+
+    return 0;
+}

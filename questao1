@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+//variaveis
+    double x1, y1, x2, y2, resultado;
+
+
+//leia os dados para obter o resultado
+    printf ("digite o valor de entrada x1: ")
+    scanf ("%lf", &x1);
+
+    printf ("digite o valor de entrada y1: ")
+    scanf ("%lf", &y1);
+
+    printf ("digite o valor de entrada x2: ")
+    scanf ("%lf", &x2);
+
+    printf ("digite o valor de entrada y2: ")
+    scanf ("%lf", &y2);
+
+
+//equação e resultado
+    resultado = sqrt (x2-x1) * (x2-x1) + (y2 - y1) * (y2-y1);
+
+    printf ("A distancia entre eles e: %lf", resultado);
+
+return 0;
+}

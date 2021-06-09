@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double a, b, c, d, e, f, x, y;
+
+    printf ("Digite o valor A: ");
+    scanf ("%lf", &a);
+    printf ("Digite o valor B: ");
+    scanf ("%lf", &b);
+    printf ("Digite o valor C: ");
+    scanf ("%lf", &c);
+    printf ("Digite o valor D: ");
+    scanf ("%lf", &d);
+    printf ("Digite o valor E: ");
+    scanf ("%lf", &e);
+    printf ("Digite o valor F: ");
+    scanf ("%lf", &f);
+
+    x = ((c * e) - (b * f) / (a * e) - (b * d));
+
+    y = ((a * f) - (c * d) / (a * e) - (b * d));
+
+    printf ("O valor de X eh %.2lf e o de Y e %.2lf", x, y);
+
+    return 0;
+}

@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+
+    int codAluno;
+    double mediaA, mediaE, notaA, notaB, notaC;
+
+    printf ("Informe o codigo do aluno: ");
+    scanf ("%d", &codAluno);
+    printf ("Informe a primeira nota do aluno: ");
+    scanf ("%lf", &notaA);
+    printf ("Informe a segunda nota do aluno: ");
+    scanf ("%lf", &notaB);
+    printf ("Informe a terceira nota do aluno: ");
+    scanf ("%lf", &notaC);
+
+    mediaE = (notaA + notaB + notaC) / 3;
+
+    mediaA = (notaA + (notaB * 2) + (notaC * 3) + mediaE) / 7;
+
+    if (mediaA >= 9.0){
+        printf ("O codigo do aluno e: %d\n", codAluno);
+        printf ("As notas do aluno foram: %.1lf, %.1lf, %.1lf\n", notaA, notaB, notaC);
+        printf ("A media dos exercicios foi de: %.1lf\n", mediaE);
+        printf ("A media de aproveitamento e: %.1lf\n", mediaA);
+        printf ("O aluno foi aprovado no conceito A\n");
+    }
+    else if (mediaA >= 7.5 && mediaA < 9.0){
+        printf ("O codigo do aluno e: %d\n", codAluno);
+        printf ("As notas do aluno foram: %.1lf, %.1lf, %.1lf\n", notaA, notaB, notaC);
+        printf ("A media dos exercicios foi de: %.1lf\n", mediaE);
+        printf ("A media de aproveitamento e: %.1lf\n", mediaA);
+        printf ("O aluno foi aprovado no conceito B\n");
+    }
+    else if (mediaA >= 6.0 && mediaA < 7.5){
+        printf ("O codigo do aluno e: %d\n", codAluno);
+        printf ("As notas do aluno foram: %.1lf, %.1lf, %.1lf\n", notaA, notaB, notaC);
+        printf ("A media dos exercicios foi de: %.1lf\n", mediaE);
+        printf ("A media de aproveitamento e: %.1lf\n", mediaA);
+        printf ("O aluno foi aprovado no conceito C\n");
+    }
+    else if (mediaA >= 4.0 && mediaA < 6.0){
+        printf ("O codigo do aluno e: %d\n", codAluno);
+        printf ("As notas do aluno foram: %.1lf, %.1lf, %.1lf\n", notaA, notaB, notaC);
+        printf ("A media dos exercicios foi de: %.1lf\n", mediaE);
+        printf ("A media de aproveitamento e: %.1lf\n", mediaA);
+        printf ("O aluno foi reprovado no conceito D\n");
+    }
+    else if (mediaA < 4.0 && mediaA >= 0){
+        printf ("O codigo do aluno e: %d\n", codAluno);
+        printf ("As notas do aluno foram: %.1lf, %.1lf, %.1lf\n", notaA, notaB, notaC);
+        printf ("A media dos exercicios foi de: %.1lf\n", mediaE);
+        printf ("A media de aproveitamento e: %.1lf\n", mediaA);
+        printf ("O aluno foi reprovado no conceito E\n");
+    }
+    return 0;
+}

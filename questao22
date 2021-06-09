@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double salarioA, aumento, salarioN, diferencaS;
+    char cargo[10];
+
+    printf ("Informe seu salario atual: ");
+    scanf ("%lf", &salarioA);
+    printf ("Informe o seu cargo: ");
+    scanf ("%s", &cargo);
+
+    if (strcmp(cargo, "GERENTE") == 0){
+        aumento = 0.1 * salarioA;
+        salarioN = salarioA + aumento;
+        diferencaS = salarioN - salarioA;
+        printf ("ANTIGO SALARIO = RS %.2lf\n", salarioA);
+        printf ("NOVO SALARIO = RS %.2lf\n", salarioN);
+        printf ("DIFERENCA DOS SALARIOS = RS %.2lf\n", diferencaS);
+    }
+
+    else if (strcmp(cargo, "ENGENHEIRO") == 0){
+        aumento = 0.2 * salarioA;
+        salarioN = salarioA + aumento;
+        diferencaS = salarioN - salarioA;
+        printf ("ANTIGO SALARIO = RS %.2lf\n", salarioA);
+        printf ("NOVO SALARIO = RS %.2lf\n", salarioN);
+        printf ("DIFERENCA DOS SALARIOS = RS %.2lf\n", diferencaS);
+    }
+    else if (strcmp(cargo, "TECNICO") == 0){
+        aumento = 0.3 * salarioA;
+        salarioN = salarioA + aumento;
+        diferencaS = salarioN - salarioA;
+        printf ("ANTIGO SALARIO = RS %.2lf\n", salarioA);
+        printf ("NOVO SALARIO = RS %.2lf\n", salarioN);
+        printf ("DIFERENCA DOS SALARIOS = RS %.2lf\n", diferencaS);
+    }
+    else {
+        aumento = 0.4 * salarioA;
+        salarioN = salarioA + aumento;
+        diferencaS = salarioN - salarioA;
+        printf ("ANTIGO SALARIO = RS %.2lf\n", salarioA);
+        printf ("NOVO SALARIO = RS %.2lf\n", salarioN);
+        printf ("DIFERENCA DOS SALARIOS = RS %.2lf\n", diferencaS);
+    }
+
+    return 0;
+}

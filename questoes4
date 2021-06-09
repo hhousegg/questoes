@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int anos, meses, dias, d;
+
+    printf ("digite sua idade em dias: ");
+    scanf ("%d", &d);
+
+    anos = (d / 365);
+    meses = (anos * 12);
+    dias = (anos * 365);
+
+    printf ("a idade em anos: %d\n", anos);
+    printf ("a idade em meses: %d\n", meses);
+    printf ("a idade em dias: %d\n", dias);
+
+    return 0;
+}

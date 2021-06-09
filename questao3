@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int ano, meses, dias;
+
+    printf ("digite a idade em anos: ");
+    scanf ("%d", &ano);
+
+    printf ("digite a idade em meses: ");
+    scanf ("%d", &meses);
+
+    printf ("digite a idade em dias: ");
+    scanf ("%d", &dias);
+
+    dias <- (dias + (ano * 365) + (meses * 30));
+
+    printf  ("sua idade em dias e: %d", dias);
+
+return 0;
+}

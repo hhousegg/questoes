@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double a, b, c, media;
+
+    printf ("Digite a nota a: ");
+    scanf ("%lf", &a);
+
+    printf ("Digite a nota b: ");
+    scanf ("%lf", &b);
+
+    printf ("Digite a nota c: ");
+    scanf ("%lf", &c);
+
+    media = (a + b + c) / 3;
+
+    if (media >= 6){
+        printf ("Aprovado");
+    }
+    else {
+        printf ("Reprovado");
+    }
+
+
+    return 0;
+}

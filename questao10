@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int a, b, c;
+
+    printf ("Digite o valor A: ");
+    scanf ("%d", &a);
+
+    printf ("Digite o valor B: ");
+    scanf ("%d", &b);
+
+    printf ("Digite o valor C: ");
+    scanf ("%d", &c);
+
+    if (a > b && a > c){
+    	printf ("A e o maior");
+	}else if (b > a && b > c){
+    	printf ("B e o maior");
+	}else if (c > a && c > b){
+    	printf ("C e o maior");
+	}
+
+return 0;
+}

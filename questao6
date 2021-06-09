@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int horas, minutos, segundos, s;
+
+    printf ("Digite a duracao do evento em segundos: ");
+    scanf ("%d", &segundos);
+
+    horas = (segundos / 3600);
+    minutos = (segundos - (horas * 3600)) / 60;
+    s = (segundos - (horas * 3600) - (minutos * 60));
+
+    printf ("A duração do evento foi de: %d horas, %d minutos e %d segundos", horas, minutos, s);
+
+    return 0;
+}

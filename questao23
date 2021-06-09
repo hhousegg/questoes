@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+    int a, b, c;
+
+    printf ("Digite o valor A: ");
+    scanf ("%d", &a);
+    printf ("Digite o valor B: ");
+    scanf ("%d", &b);
+    printf ("Digite o valor C: ");
+    scanf ("%d", &c);
+
+    if (c > a + b || a > b + c || b > a + c){
+        printf ("Nao formam um triangulo\n");
+    }
+    else if (a != b && a != c && b != c){
+        printf ("Triangulo escaleno\n");
+    }
+    else if (a == b && a == c){
+        printf ("Triangulo equilatero\n");
+    }
+    else if (a == b || a == c || b == c){
+        printf ("Triangulo isosceles\n");
+    }
+
+    return 0;
+}

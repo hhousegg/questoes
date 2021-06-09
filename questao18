@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double saldoMedio, credito;
+
+    printf ("Digite seu saldo medio: ");
+    scanf ("%lf", &saldoMedio);
+
+    if (saldoMedio < 200){
+        credito = 0;
+    }
+    else if (saldoMedio >= 201 && saldoMedio <= 400){
+        credito = 0.2 * saldoMedio;
+        printf ("Saldo medio = %.2lf\n", saldoMedio);
+        printf ("Valor do credito = %.2lf\n", credito);
+    }
+    else if (saldoMedio >= 401 && saldoMedio <= 601){
+        credito = 0.3* saldoMedio;
+        printf ("Saldo medio = %.2lf\n", saldoMedio);
+        printf ("Valor do credito = %.2lf\n", credito);
+    }
+    else if (saldoMedio >= 601){
+        credito = 0.4* saldoMedio;
+        printf ("Saldo medio = %.2lf\n", saldoMedio);
+        printf ("Valor do credito = %.2lf\n", credito);
+    }
+    return 0;
+}

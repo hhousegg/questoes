@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double e;
+
+    e = 1.0 + 1.0 + (1.0 / 2.0);
+    printf ("e com tres termos: %lf\n", e);
+
+    e = e + (1.0 / 6.0);
+    printf ("e com quatro termos: %lf\n", e);
+
+    e = e + (1.0 / 24.0);
+    printf ("e com cinco termos: %lf\n", e);
+
+    e = e + (1.0 / 120.0);
+    printf ("e com seis termos: %lf\n", e);
+
+    e = e + (1.0 / 720.0);
+    printf ("e com sete termos: %lf\n", e);
+
+
+    return 0;
+}

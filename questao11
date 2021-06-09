@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    // a e b variaveis de atribuição, x e y menor que, maior que
+    int a, b, x, y;
+
+    printf ("Digite o valor A: ");
+    scanf ("%d", &a);
+
+    printf ("Digite o valor B: ");
+    scanf ("%d", &b);
+
+    if (a > b){
+       x = a;
+       y = b;
+       printf ("Nao sao multiplos");
+    }else {
+        x = b;
+        y = a;
+        printf ("sao multiplos");
+    }
+
+
+    return 0;
+}

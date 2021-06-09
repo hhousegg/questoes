@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double altura, alturap = 0.0;
+    char sexo;
+
+    printf ("Digite sua altura: ");
+    fflush(stdin);
+    scanf ("%lf", &altura);
+
+    printf ("Digite o seu sexo (M para masculino e F para feminino):");
+    fflush(stdin);
+    scanf ("%c", &sexo);
+
+    if (sexo == 'M'){
+        altura += ((72.2 * altura) - 58);
+        printf ("O seu peso ideal e: %.3lf", alturap);
+    }
+    else {
+        alturap = ((62.1 * altura) - 44.7);
+        printf ("O seu peso ideal e: %.3lf", alturap);
+    }
+
+    return 0;
+}

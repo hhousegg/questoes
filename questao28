@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+  int hr1, min1, seg1, hr2, min2, seg2, tempo, hr, min;
+
+  printf ("Digite hora e minuto que comecou e hora e minuto que terminou")
+  scanf ("%d %d %d %d", &hr1, &min1, &hr2, &min2);
+
+  if (hr1 >= hr2 && min1 >= min2){
+    hr2 = hr2 + 24;
+  }
+  else if (min1 >= min2){
+    min2 = min2 + 60;
+    hr2 = hr2 - 1;
+  }
+    seg1 = (hr1 * 3600) + (min1 * 60);
+    seg2 = (hr2 * 3600) + (min2 * 60);
+
+    tempo = (seg2 - seg1);
+    hr = tempo / 3600;
+    min = (tempo - (hr * 3600)) / 60;
+    printf ("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", hr, min);
+return 0;
+}

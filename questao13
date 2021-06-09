@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int a, b, c, x, y;
+
+    printf ("Digite o primeiro numero: ");
+    scanf ("%d", &a);
+
+    printf ("Digite o segundo numero: ");
+    scanf ("%d", &b);
+
+    printf ("Digite o terceiro numero: ");
+    scanf ("%d", &c);
+
+    if (a > b){
+        x = a;
+    }else {
+        x = b;
+    }
+    if (x < c){
+        x = c;
+    }
+
+    printf ("O maior numero e: %d", x);
+
+    return 0;
+}

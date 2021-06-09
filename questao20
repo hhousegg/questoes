@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int cod;
+    double qnt, preco;
+
+
+    printf ("Informe a quantidade do produto: ");
+    scanf ("%lf", &qnt);
+
+    printf ("Informe o codigo do produto: ");
+    scanf ("%d", &cod);
+
+    switch (cod){
+        case 1001 :
+            printf ("O valor a ser pago e: %.2lf", + 5.32 * qnt);
+        break;
+
+        case 1324 :
+            printf ("O valor a ser pago e: %.2lf", + 6.45 * qnt);
+        break;
+
+        case 6548 :
+            printf ("O valor a ser pago e: %.2lf", + 2.37 * qnt);
+        break;
+
+        case 987 :
+            printf ("O valor a ser pago e: %.2lf", + 5.32 * qnt);
+        break;
+
+        case 7623 :
+            printf ("O valor a ser pago e: %.2lf", + 6.45 * qnt);
+        break;
+
+        default:
+            printf ("Codigo invalido");
+    }
+
+    return 0;
+}

@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int horaInicial, horaFinal, horaTotal, minutoInicial, minutoFinal, minutoTotal;
+
+    printf ("Informe a hora e o minuto que o jogo comecou: ");
+    scanf ("%d %d", &horaInicial, &minutoInicial);
+    printf ("Informe a hora e o minuto que o jogo terminou: ");
+    scanf ("%d %d", &horaFinal, &minutoFinal);
+
+    if (horaInicial > 23){
+        printf ("Erro: Entrada de dados nao e valida em hora inicial");
+    }
+    else if (minutoInicial > 59){
+        printf ("Erro: Entrada de dados nao e valida em minuto inicial");
+    }
+    else if (horaFinal > 23){
+        printf ("Erro: Entrada de dados nao e valida em hora final");
+    }
+    else if (minutoFinal > 59){
+        printf ("Erro: Entrada de dados nao e valida em minuto final");
+    }
+
+    else if (horaInicial < horaFinal){
+        horaTotal = (horaFinal - horaInicial);
+
+    if (horaInicial > horaFinal){
+        horaTotal = (horaFinal + 24) - horaInicial;
+        }
+    }
+    if (minutoInicial > minutoFinal){
+        horaTotal = horaTotal - 1;
+    }
+    else if (minutoInicial < minutoFinal){
+        minutoTotal = minutoFinal - minutoInicial;
+
+    if (minutoInicial > minutoFinal){
+        minutoTotal = (minutoFinal + 60) - minutoInicial;
+        }
+    }
+    if (horaInicial <= 23 || horaFinal <= 23 || minutoInicial < 59 || minutoFinal < 59){
+        printf ("O tempo de duracao do jogo foi de : %d horas e %d minutos", horaTotal, minutoTotal);
+    }
+
+    return 0;
+}

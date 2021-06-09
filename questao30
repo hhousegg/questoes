@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	double indiceP, ipc;
+
+	printf ("Digite o indice de poluicao medido: ");
+	scanf ("%lf", &indiceP);
+
+	ipc = indiceP;
+
+
+    	if (ipc >= 0.05 && ipc <= 0.25){
+        printf ("Nivel de poluicao aceitavel\n");
+        }
+        else if (ipc >= 0.25 && ipc <= 0.30){
+        printf ("Industrias de primeiro grupo devem suspender atividades\n");
+        }
+        else if (ipc >= 0.30 && ipc <= 0.40){
+        printf ("Industrias de segundo grupo devem suspender atividades\n");
+        }
+        else if (ipc >= 0.50){
+        printf ("Todos os grupos devem suspender atividades\n");
+        }
+    return 0;
+}

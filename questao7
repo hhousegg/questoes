@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double custoFabricacao, custoDespesa, custoFinal;
+
+    printf ("Digite o custo do fabricante: ");
+    scanf ("%lf", &custoFabricacao);
+
+    custoFinal = custoFabricacao + (0.45 * custoFabricacao);
+    custoFinal = custoFinal + (0.28 * custoFinal);
+
+    printf ("O custo para o consumidor e de: %2.lf", custoFinal);
+
+
+    return 0;
+}
